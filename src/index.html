@@ -14,7 +14,7 @@
 <body class="bg-black text-white  ">
     <!-- // Starting Of Project -->
     <div class="flex container m-auto    ">
-        <div class="first w-[50%]   ">
+        <div class="first md:w-[50%] sm:w-[10%] relative ">
             <div class="left-side sticky top-0">
                 <div class="logo px-2 py-2 w-full   flex justify-center ">
                     <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -26,52 +26,70 @@
                         </g>
                     </svg>
                 </div>
-                <div class="sidebar flex  justify-end  ">
+                <div class="sidebar flex  lg:justify-end md:justify-start  ">
                     <ul class="flex flex-col    w-[65%]  py-2 ">
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-house " style="color: #ffffff;"></i>Home
+                            <i class="fa-solid fa-house " style="color: #ffffff;"></i><span class="hidden md:inline  ">Home
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-compass" style="color: #ffffff;"></i>Explore
+                            <i class="fa-solid fa-compass" style="color: #ffffff;"></i><span class="hidden md:inline  ">Explore
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-bell" style="color: #ffffff;"></i>Notification
+                            <i class="fa-solid fa-bell" style="color: #ffffff;"></i><span class="hidden md:inline  ">Notification
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-regular fa-message" style="color: #ffffff;"></i>Messages
+                            <i class="fa-regular fa-message" style="color: #ffffff;"></i><span class="hidden md:inline  ">Messages
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>Lists
+                            <i class="fa-solid fa-list-ul" style="color: #ffffff;"></i><span class="hidden md:inline  ">Lists
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-bookmark" style="color: #ffffff;"></i>Bookmark
+                            <i class="fa-solid fa-bookmark" style="color: #ffffff;"></i><span class="hidden md:inline  ">Bookmark
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-people-group" style="color: #ffffff;"></i>cmmunities
+                            <i class="fa-solid fa-people-group" style="color: #ffffff;"></i><span class="hidden md:inline  ">cmmunities
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-solid fa-dollar-sign" style="color: #ffffff;"></i>premium
+                            <i class="fa-solid fa-dollar-sign" style="color: #ffffff;"></i><span class="hidden md:inline  ">premium
+                            </span>
                         </li>
                         <li
                             class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
-                            <i class="fa-regular fa-user" style="color: #ffffff;"></i>Profile
+                            <i class="fa-regular fa-user" style="color: #ffffff;"></i><span class="hidden md:inline  ">Profile
+                            </span>
+                        </li>
+                        <li
+                            class="flex justify-start items-center gap-4   text-lg  p-2 w-fit hover:bg-gray-800  hover:cursor-pointer hover:rounded-xl     ">
+                            <i class="fa-solid fa-feather-pointed" style="color: #ffffff;"></i><span class="hidden md:inline  ">Post
+                            </span>
                         </li>
 
 
+                        <!-- <div class="button m-auto     ">
+                            <button
+                                class="bg-blue-500    py-1  px-15   my-4      rounded-2xl font-medium ">Post</button>
+                        </div> -->
                     </ul>
 
                 </div>
-                <div class="button flex w-full justify-center  ">
-                    <button class="bg-blue-500  my-1  py-1.5 px-2 rounded-2xl font-medium ">Post</button>
-                </div>
+                <!-- <div class="profile flex justify-center ">
+                    <img  class="w-10 mx-2  absolute   bottom-0     my-4    rounded-full " src="img/manpreet.jpg" alt="">
+                </div> -->
             </div>
         </div>
         <div class="second w-full   border-1 border-x-gray-800 border-y-black ">
@@ -88,7 +106,7 @@
                         <img class="w-12  mx-2 my-4    rounded-full    " src="img/manpreet.jpg" alt="">
                     </div>
                     <div class="text">
-                        <p class="text-2xl text-gray-500    ">What's whats-hapning ?</p>
+                        <p class="text-xl md:text-2xl text-gray-500    ">What's whats-hapning ?</p>
                     </div>
                 </div>
                 <div class="bottom flex item-center justify-between  px-5  py-3 ">
@@ -104,11 +122,88 @@
                     </div>
                 </div>
             </div>
-            <div class="post">
+
+
+
+
+            <!-- Post section  -->
+            <div class="post border-b border-gray-500 ">
+                <div class="post-sec  flex items-center  p-2   ">
+                    <div class="img">
+                        <img src="" alt="">
+                        <img class="w-9  mx-2 my-4    rounded-full    " src="img/images.jpg" alt="">
+
+                    </div>
+                    <div class="text flex    ">
+                        <h1 class="font-medium w-28  truncate   ">Technology Media</h1>
+                        <p class="px-2 text-gray-500 w-22       truncate      ">@Technology</p>
+                        <div class="px-2 text-gray-500  ">· 11h</div>
+                    </div>
+                </div>
+                <div class="description w-[80%] m-auto py-2 ">
+                    this is about the ...
+                </div>
+                <div class="post-img">
+                    <img class="w-[80%] m-auto rounded-md    " src="img/G2MYT8CXYAAAAHx.jpg" alt="">
+                    <div class="intraction">
+                        <div class="icons flex justify-evenly py-2 ">
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-comment"
+                                    style="color: #616161;"></i>12k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-share-from-square"
+                                    style="color: #616161;"></i>2k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-heart"
+                                    style="color: #616161;"></i>100k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-solid fa-chart-simple"
+                                    style="color: #616161;"></i>11M </p>
+                            <div class="save">
+                                <i class="fa-regular fa-bookmark" style="color: #616161;"></i>
+                                <i class="fa-solid fa-download" style="color: #616161;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post border-b border-gray-500 ">
                 <div class="post-sec  flex items-center  p-2   ">
                     <div class="img">
                         <img src="" alt="">
                         <img class="w-9  mx-2 my-4    rounded-full    " src="img/manpreet.jpg" alt="">
+
+                    </div>
+                    <div class="text flex ">
+                    <h1 class="font-medium w-28  truncate   ">Sports</h1>
+                        <p class="px-2 text-gray-500 w-22       truncate      ">@daily_sports</p>
+                        <div class="px-2 text-gray-500  ">· 11h</div>
+                    </div>
+                </div>
+                <div class="description w-[80%] m-auto py-2 ">
+                    this is about the ...
+                </div>
+                <div class="post-img">
+                    <img class="w-[80%] m-auto rounded-md    " src="img/G2M7xlMWgAECpth.jpg" alt="">
+                    <div class="intraction">
+                        <div class="icons flex justify-evenly py-2 ">
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-comment"
+                                    style="color: #616161;"></i>12k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-share-from-square"
+                                    style="color: #616161;"></i>2k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-heart"
+                                    style="color: #616161;"></i>100k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-solid fa-chart-simple"
+                                    style="color: #616161;"></i>11M </p>
+                            <div class="save">
+                                <i class="fa-regular fa-bookmark" style="color: #616161;"></i>
+                                <i class="fa-solid fa-download" style="color: #616161;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post border-b border-gray-500 ">
+                <div class="post-sec  flex items-center  p-2   ">
+                    <div class="img">
+                        <img src="" alt="">
+                        <img class="w-9  mx-2 my-2   rounded-full    " src="img/manpreet.jpg" alt="">
 
                     </div>
                     <div class="text flex ">
@@ -117,16 +212,35 @@
                         <div class="px-2 text-gray-500  ">· 11h</div>
                     </div>
                 </div>
-                
+                <div class="description w-[80%] m-auto py-2 ">
+                    this is about the ...
+                </div>
                 <div class="post-img">
-                    <img class="w-[80%] m-auto   " src="img/G2Jw7jNWUAIdb0Q.jpg" alt="">
-
+                    <img class="w-[80%] m-auto rounded-md    " src="img/G2Jw7jNWUAIdb0Q.jpg" alt="">
+                    <div class="intraction">
+                        <div class="icons flex justify-evenly py-2 ">
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-comment"
+                                    style="color: #616161;"></i>12k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-share-from-square"
+                                    style="color: #616161;"></i>2k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-regular fa-heart"
+                                    style="color: #616161;"></i>100k</p>
+                            <p class="text-sm text-gray-500 "><i class="fa-solid fa-chart-simple"
+                                    style="color: #616161;"></i>11M </p>
+                            <div class="save">
+                                <i class="fa-regular fa-bookmark" style="color: #616161;"></i>
+                                <i class="fa-solid fa-download" style="color: #616161;"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
+
+
         </div>
-        <div class="third w-1/2">
+        <div class="third w-1/2 hidden sm:inline ">
             <div
                 class="search flex border-1 border-gray-600   bg-gray-900 mx-4 my-4     px-2 py-2 rounded-full  gap-2  w-full   ">
                 <div class="logo">
